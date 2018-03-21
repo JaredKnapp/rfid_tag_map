@@ -1,0 +1,5 @@
+<div class="container" [ngStyle]="{'width': (this.containerWidth + 1) + 'px', 'height': (this.containerHeight + 0) + 'px', 'background-image': 'url(' + this.backgroundUrl + ')'}">
+  <app-tag *ngFor="let tag of tags;" [x]="getXinPixels(tag.x)" [y]="getYinPixels(tag.y)" [epc]="tag.epc"></app-tag>
+</div>
+<hr>
+<!-- Original: ({{ imageWidth }} x {{ imageHeight }}) Scaled ( {{ containerWidth }} x {{ containerHeight }} ) -->
